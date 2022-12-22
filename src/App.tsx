@@ -1,5 +1,7 @@
+import { Card } from "./components/Card/Card";
+
 function App() {
-  return <h1>Posts app template</h1>;
+  return <Card />;
 }
 
 export default App;

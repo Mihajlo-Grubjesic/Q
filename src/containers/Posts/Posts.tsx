@@ -4,6 +4,7 @@ import {
   CardsWrapper,
   ContentWrapper,
 } from '../../components/Card/styled/Card';
+import { withMessage } from '../../components/HOC/withMessage';
 import { Input } from '../../components/Input/Input';
 import { NavigationLink } from '../../components/Link/Link';
 import { ROUTES } from '../../constants/routes';
@@ -13,9 +14,12 @@ import { NoPostsResults, PostsSearch } from './components/PostsList/PostsList';
 
 interface Props {
   posts: PostData[];
+  message?: string;
 }
 
-export const Posts = ({ posts }: Props): JSX.Element => {
+const Posts = ({ posts, message }: Props): JSX.Element => {
+  console.log(`${message} Posts List`);
+
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -67,3 +71,5 @@ export const Posts = ({ posts }: Props): JSX.Element => {
     </>
   );
 };
+
+export default withMessage(Posts);

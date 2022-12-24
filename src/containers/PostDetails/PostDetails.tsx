@@ -2,15 +2,19 @@ import { useParams } from 'react-router-dom';
 import { Button } from '../../components/Button/Button';
 import { ContentWrapper } from '../../components/Card/styled/Card';
 import { CardDetails } from '../../components/CardDetails/CardDetails';
+import { withMessage } from '../../components/HOC/withMessage';
 import { NavigationLink } from '../../components/Link/Link';
 import { ROUTES } from '../../constants/routes';
 import { PostData } from '../../types';
 
 interface Props {
   posts: PostData[];
+  message?: string;
 }
 
-export const PostDetails = ({ posts }: Props): JSX.Element => {
+const PostDetails = ({ posts, message }: Props): JSX.Element => {
+  console.log(`${message} Post Details`);
+
   const { postId } = useParams();
   const post = posts.find((post) => post.id.toString() === postId);
   const { title = '', username = '', comments = [] } = post ?? {};
@@ -33,3 +37,5 @@ export const PostDetails = ({ posts }: Props): JSX.Element => {
     </>
   );
 };
+
+export default withMessage(PostDetails);

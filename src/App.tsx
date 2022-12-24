@@ -9,10 +9,10 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/themes';
 import useDarkTheme from './hooks/useDarkTheme';
 
-import { Header } from './components/Header/Header';
-import { Posts } from './containers/Posts/Posts';
-import { PostDetails } from './containers/PostDetails/PostDetails';
-import { ErrorPage } from './components/ErrorPage/ErrorPage';
+import Header from './components/Header/Header';
+import Posts from './containers/Posts/Posts';
+import PostDetails from './containers/PostDetails/PostDetails';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import { Loader } from './components/Loader/Loader';
 import { ROUTES } from './constants/routes';
 import { usePosts } from './hooks/usePosts';
@@ -42,11 +42,9 @@ function App() {
 
   return (
     <ThemeProvider theme={selectedTheme}>
-      <>
-        <GlobalStyles />
-        <Header onToggleTheme={themeToggler} />
-        <RouterProvider router={PostsRoutes} />
-      </>
+      <GlobalStyles />
+      <Header onToggleTheme={themeToggler} />
+      <RouterProvider router={PostsRoutes} />
     </ThemeProvider>
   );
 }

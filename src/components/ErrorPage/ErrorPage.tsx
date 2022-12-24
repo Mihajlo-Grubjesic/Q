@@ -1,6 +1,9 @@
 import { useRouteError } from 'react-router-dom';
+import { withMessage } from '../HOC/withMessage';
 
-export const ErrorPage = () => {
+const ErrorPage = ({ message }: { message?: string }) => {
+  console.log(`${message} Error Page`);
+
   const error = useRouteError() as { statusText: string; message: string };
 
   return (
@@ -13,3 +16,5 @@ export const ErrorPage = () => {
     </div>
   );
 };
+
+export default withMessage(ErrorPage);

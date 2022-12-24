@@ -18,18 +18,21 @@
 
 TODO:
 
-- storybook
-- add Card story and CardDetails story
-- Search component story
 - snapshots tests
 - husky
-- add routes
 - prettier and linter custom config - maybe
-- fetch data & prepare for component (write hook for this)
-- display data
+- storybook done
 - write RTL tests
 - white matchInlineSnapshot test for combinePosts function
 - console.log in component (set global context provider)
 - MAYBE: add virtual list library
-- add search functionality
-- add click on Post functionality
+
+DONE:
+
+- add Card story and CardDetails story done
+- Search component story done
+- add routes done
+- fetch data & prepare for component (write hook for this) done
+- display data done
+- add search functionality done
+- add click on Post functionality done

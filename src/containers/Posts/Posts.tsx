@@ -34,7 +34,7 @@ export const Posts = ({ posts }: Props): JSX.Element => {
       );
       setFilteredPosts(filterPosts);
     }
-  }, [debouncedSearchTerm]);
+  }, [debouncedSearchTerm, posts]);
 
   return (
     <>

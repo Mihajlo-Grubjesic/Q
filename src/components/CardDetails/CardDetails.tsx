@@ -1,7 +1,4 @@
-import { ROUTES } from "../../constants/routes";
-import { Button } from "../Button/Button";
 import { CardSubtitle, CardTitle } from "../Card/styled/Card";
-import { NavigationLink } from "../Link/Link";
 import { CardDetailsWrapper } from "./styled/CardDetails";
 
 interface CardDetailsProps {

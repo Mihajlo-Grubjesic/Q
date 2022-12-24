@@ -24,7 +24,7 @@ function App() {
   if (loading) return <Loader />;
   if (error) return <div>{error}</div>;
 
-  const router = createBrowserRouter([
+  const PostsRoutes = createBrowserRouter([
     {
       path: "/",
       element: <Navigate to={ROUTES.POSTS} />,
@@ -45,7 +45,7 @@ function App() {
       <>
         <GlobalStyles />
         <Header onToggleTheme={themeToggler} />
-        <RouterProvider router={router} />
+        <RouterProvider router={PostsRoutes} />
       </>
     </ThemeProvider>
   );

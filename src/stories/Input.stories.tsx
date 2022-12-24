@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-
 import { Input as InputComponent } from "../components/Input/Input";
 
 export default {

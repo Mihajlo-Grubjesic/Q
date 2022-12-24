@@ -8,7 +8,11 @@ export default {
 } as ComponentMeta<typeof ThemeToggler>;
 
 const Template: ComponentStory<typeof ThemeToggler> = () => (
-  <ThemeToggler onToggleTheme={() => {}} />
+  <ThemeToggler
+    onToggleTheme={() => {
+      console.log("toggle theme");
+    }}
+  />
 );
 
 export const ThemeTogglerButton = Template.bind({});

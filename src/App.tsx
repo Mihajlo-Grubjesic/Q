@@ -12,12 +12,14 @@ import useDarkTheme from "./hooks/useDarkTheme";
 import { Header } from "./components/Header/Header";
 import { Posts } from "./containers/Posts/Posts";
 import { PostDetails } from "./containers/PostDetails/PostDetails";
+import { ErrorPage } from "./components/ErrorPage/ErrorPage";
 import { ROUTES } from "./constants/routes";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to={ROUTES.POSTS} />,
+    errorElement: <ErrorPage />,
   },
   {
     path: ROUTES.POSTS,

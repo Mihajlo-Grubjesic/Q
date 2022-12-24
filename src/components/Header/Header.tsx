@@ -8,7 +8,6 @@ interface Props {
 export const Header = ({ onToggleTheme }: Props): JSX.Element => {
   return (
     <HeaderWrapper>
-      <div>Search field here</div>
       <ThemeToggler onToggleTheme={onToggleTheme} />
     </HeaderWrapper>
   );

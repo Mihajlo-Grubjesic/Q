@@ -24,6 +24,7 @@ TODO:
 - snapshots tests
 - husky
 - add routes
+- prettier and linter custom config - maybe
 - fetch data & prepare for component (write hook for this)
 - display data
 - write RTL tests

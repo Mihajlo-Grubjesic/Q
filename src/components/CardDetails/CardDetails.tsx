@@ -22,9 +22,6 @@ export const CardDetails = ({
         <CardSubtitle>{subtitle}</CardSubtitle>
         {content}
       </CardDetailsWrapper>
-      <NavigationLink to={ROUTES.POSTS}>
-        <Button>← Go Back</Button>
-      </NavigationLink>
     </>
   );
 };

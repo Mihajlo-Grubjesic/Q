@@ -41,15 +41,14 @@ export const Posts = ({ posts }: Props): JSX.Element => {
       )}
       <CardsWrapper>
         {filteredPosts.map((post) => (
-          <NavigationLink to={`${ROUTES.POSTS}/${post.id}`}>
+          <NavigationLink to={`${ROUTES.POSTS}/${post.id}`} key={post.id}>
             <Card
               title={post.title}
               subtitle={post.username}
-              key={post.id}
               content={
                 <ContentWrapper>
-                  {post.comments.map((comment) => (
-                    <p key={comment}>* {comment}</p>
+                  {post.comments.map((comment, index) => (
+                    <p key={index}>* {comment}</p>
                   ))}
                 </ContentWrapper>
               }

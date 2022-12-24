@@ -18,4 +18,4 @@ const Template: ComponentStory<typeof CardComponent> = (args) => (
   </div>
 );
 
-export const Card = Template.bind({});
+export const CardItem = Template.bind({});

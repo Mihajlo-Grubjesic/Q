@@ -13,7 +13,7 @@ export default {
 } as ComponentMeta<typeof CardComponent>;
 
 const Template: ComponentStory<typeof CardComponent> = (args) => (
-  <div style={{ width: '300px' }}>
+  <div style={{ width: '400px' }}>
     <CardComponent {...args} />
   </div>
 );

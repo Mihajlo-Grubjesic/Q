@@ -1,5 +1,17 @@
-import { CardWrapper } from "./styled/Card";
+import { CardWrapper, CardSubtitle, CardTitle } from "./styled/Card";
 
-export const Card = (): JSX.Element => {
-  return <CardWrapper>Card</CardWrapper>;
+interface CardProps {
+  title: string;
+  subtitle: string;
+  content?: JSX.Element;
+}
+
+export const Card = ({ title, subtitle, content }: CardProps): JSX.Element => {
+  return (
+    <CardWrapper>
+      <CardTitle>{title}</CardTitle>
+      <CardSubtitle>{subtitle}</CardSubtitle>
+      {content}
+    </CardWrapper>
+  );
 };

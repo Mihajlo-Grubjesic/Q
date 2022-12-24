@@ -2,14 +2,14 @@ import { CardSubtitle, CardTitle } from '../Card/styled/Card';
 import { CardDetailsWrapper } from './styled/CardDetails';
 
 interface CardDetailsProps {
-  title?: string;
-  subtitle?: string;
+  title: string;
+  subtitle: string;
   content?: JSX.Element;
 }
 
 export const CardDetails = ({
-  title = '',
-  subtitle = '',
+  title,
+  subtitle,
   content,
 }: CardDetailsProps): JSX.Element => {
   return (

@@ -13,15 +13,16 @@ interface Props {
 export const PostDetails = ({ posts }: Props): JSX.Element => {
   const { postId } = useParams();
   const post = posts.find((post) => post.id.toString() === postId);
+  const { title = '', username = '', comments = [] } = post ?? {};
   return (
     <>
       <CardDetails
-        title={post?.title}
-        subtitle={post?.username}
+        title={title}
+        subtitle={username}
         content={
           <ContentWrapper>
-            {post?.comments.map((comment) => (
-              <p key={comment}>* {comment}</p>
+            {comments.map((comment: string) => (
+              <p key={comment}>● {comment}</p>
             ))}
           </ContentWrapper>
         }

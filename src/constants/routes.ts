@@ -1,4 +1,4 @@
 export enum ROUTES {
-  POSTS = "/posts",
-  POST = "/posts/:postId",
+  POSTS = '/posts',
+  POST = '/posts/:postId',
 }

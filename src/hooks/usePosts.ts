@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { API_URL } from "../constants/api";
-import { combinePostsData } from "../utils";
+import { useEffect, useState } from 'react';
+import { API_URL } from '../constants/api';
+import { combinePostsData } from '../utils';
 
 export const usePosts = () => {
   const [posts, setPosts] = useState(null);
@@ -26,7 +26,7 @@ export const usePosts = () => {
         setComments(comments);
       } catch (err) {
         if (err instanceof Error) setError(err.message);
-        setError("Unexpected network error");
+        setError('Unexpected network error');
       } finally {
         setLoading(false);
       }

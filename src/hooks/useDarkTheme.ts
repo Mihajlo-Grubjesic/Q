@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const THEMES = {
-  LIGHT: "light",
-  DARK: "dark",
+  LIGHT: 'light',
+  DARK: 'dark',
 };
 
 const useDarkTheme = (): { theme: string; themeToggler: () => void } => {

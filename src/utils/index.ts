@@ -1,4 +1,4 @@
-import { Post, User, Comment, PostData } from "../types";
+import { Post, User, Comment, PostData } from '../types';
 
 export const combinePostsData = ({
   posts,
@@ -11,7 +11,7 @@ export const combinePostsData = ({
 }): PostData[] => {
   return posts.map((post) => {
     const username =
-      users.find((user) => user.id === post.userId)?.username ?? "";
+      users.find((user) => user.id === post.userId)?.username ?? '';
     const postComments = comments
       .filter((comment) => comment.postId === post.id)
       .map((comment) => comment.body);

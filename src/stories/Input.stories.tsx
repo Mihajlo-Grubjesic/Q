@@ -1,11 +1,11 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Input as InputComponent } from "../components/Input/Input";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Input as InputComponent } from '../components/Input/Input';
 
 export default {
-  title: "Example/Input",
+  title: 'Example/Input',
   component: InputComponent,
   args: {
-    placeholder: "Placeholder",
+    placeholder: 'Placeholder',
   },
 } as ComponentMeta<typeof InputComponent>;
 

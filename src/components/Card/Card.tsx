@@ -1,4 +1,4 @@
-import { CardWrapper, CardSubtitle, CardTitle } from "./styled/Card";
+import { CardWrapper, CardSubtitle, CardTitle } from './styled/Card';
 
 interface CardProps {
   title: string;

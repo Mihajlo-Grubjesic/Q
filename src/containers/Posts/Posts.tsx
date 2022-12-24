@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Card } from "../../components/Card/Card";
+import { useState } from 'react';
+import { Card } from '../../components/Card/Card';
 import {
   CardsWrapper,
   ContentWrapper,
-} from "../../components/Card/styled/Card";
-import { Input } from "../../components/Input/Input";
-import { NavigationLink } from "../../components/Link/Link";
-import { ROUTES } from "../../constants/routes";
-import { PostData } from "../../types";
-import { NoPostsResults, PostsSearch } from "./components/PostsList/PostsList";
+} from '../../components/Card/styled/Card';
+import { Input } from '../../components/Input/Input';
+import { NavigationLink } from '../../components/Link/Link';
+import { ROUTES } from '../../constants/routes';
+import { PostData } from '../../types';
+import { NoPostsResults, PostsSearch } from './components/PostsList/PostsList';
 
 interface Props {
   posts: PostData[];
@@ -18,11 +18,11 @@ export const Posts = ({ posts }: Props): JSX.Element => {
   const [filteredPosts, setFilteredPosts] = useState([...posts]);
 
   const handlePostSearch = (searchTerm: string) => {
-    if (searchTerm === "") {
+    if (searchTerm === '') {
       setFilteredPosts(posts);
     } else {
       const filterPosts = posts.filter((post) =>
-        post.username.toLowerCase().includes(searchTerm.toLowerCase())
+        post.username.toLowerCase().includes(searchTerm.toLowerCase()),
       );
       setFilteredPosts(filterPosts);
     }

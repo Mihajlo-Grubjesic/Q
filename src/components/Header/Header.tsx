@@ -1,5 +1,5 @@
-import { ThemeToggler } from "../ThemeToggler/ThemeToggler";
-import { HeaderWrapper } from "./styled/Header";
+import { ThemeToggler } from '../ThemeToggler/ThemeToggler';
+import { HeaderWrapper } from './styled/Header';
 
 interface Props {
   onToggleTheme: () => void;

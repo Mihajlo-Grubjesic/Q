@@ -1,5 +1,5 @@
-import { CardSubtitle, CardTitle } from "../Card/styled/Card";
-import { CardDetailsWrapper } from "./styled/CardDetails";
+import { CardSubtitle, CardTitle } from '../Card/styled/Card';
+import { CardDetailsWrapper } from './styled/CardDetails';
 
 interface CardDetailsProps {
   title?: string;
@@ -8,8 +8,8 @@ interface CardDetailsProps {
 }
 
 export const CardDetails = ({
-  title = "",
-  subtitle = "",
+  title = '',
+  subtitle = '',
   content,
 }: CardDetailsProps): JSX.Element => {
   return (

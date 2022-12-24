@@ -19,7 +19,6 @@
 TODO:
 
 - snapshots tests
-- storybook done
 - write RTL tests
 - white matchInlineSnapshot test for combinePosts function
 - console.log in component (set global context provider)
@@ -32,6 +31,7 @@ DONE:
 - add Card story and CardDetails story done
 - Search component story done
 - add routes done
+- storybook done
 - fetch data & prepare for component (write hook for this) done
 - display data done
 - add search functionality done

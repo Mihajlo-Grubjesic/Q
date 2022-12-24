@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Card } from '../../components/Card/Card';
 import {
   CardsWrapper,
@@ -7,6 +7,7 @@ import {
 import { Input } from '../../components/Input/Input';
 import { NavigationLink } from '../../components/Link/Link';
 import { ROUTES } from '../../constants/routes';
+import { useDebounce } from '../../hooks/useDebounce';
 import { PostData } from '../../types';
 import { NoPostsResults, PostsSearch } from './components/PostsList/PostsList';
 
@@ -15,18 +16,25 @@ interface Props {
 }
 
 export const Posts = ({ posts }: Props): JSX.Element => {
-  const [filteredPosts, setFilteredPosts] = useState([...posts]);
+  const [filteredPosts, setFilteredPosts] = useState(posts);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handlePostSearch = (searchTerm: string) => {
-    if (searchTerm === '') {
+    setSearchTerm(searchTerm);
+  };
+
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
+
+  useEffect(() => {
+    if (debouncedSearchTerm === '') {
       setFilteredPosts(posts);
     } else {
       const filterPosts = posts.filter((post) =>
-        post.username.toLowerCase().includes(searchTerm.toLowerCase()),
+        post.username.toLowerCase().includes(debouncedSearchTerm.toLowerCase()),
       );
       setFilteredPosts(filterPosts);
     }
-  };
+  }, [debouncedSearchTerm]);
 
   return (
     <>

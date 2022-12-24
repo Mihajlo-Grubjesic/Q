@@ -11,12 +11,13 @@ export const ContentWrapper = styled.div`
 export const CardWrapper = styled.div`
   display: flex;
   min-height: 200px;
+  height: 95%;
   background: ${({ theme }) => theme.background};
   border-radius: 4px;
   color: ${({ theme }) => theme.color};
   flex-direction: column;
   align-items: center;
-  margin: 4px;
+  margin: 8px;
   cursor: pointer;
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75);
   box-shadow: ${({ theme }) => ` 0px 0px 2px 1px ${theme.color}`};

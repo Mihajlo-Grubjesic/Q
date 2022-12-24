@@ -5,8 +5,10 @@ import {
   ContentWrapper,
 } from "../../components/Card/styled/Card";
 import { Input } from "../../components/Input/Input";
+import { NavigationLink } from "../../components/Link/Link";
+import { ROUTES } from "../../constants/routes";
 import { PostData } from "../../types";
-import { PostsSearch } from "./components/PostsList/PostsList";
+import { NoPostsResults, PostsSearch } from "./components/PostsList/PostsList";
 
 interface Props {
   posts: PostData[];
@@ -19,7 +21,7 @@ export const Posts = ({ posts }: Props): JSX.Element => {
     if (searchTerm === "") {
       setFilteredPosts(posts);
     } else {
-      const filterPosts = filteredPosts.filter((post) =>
+      const filterPosts = posts.filter((post) =>
         post.username.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredPosts(filterPosts);
@@ -34,20 +36,25 @@ export const Posts = ({ posts }: Props): JSX.Element => {
           placeholder="Search posts by username"
         />
       </PostsSearch>
+      {filteredPosts.length === 0 && (
+        <NoPostsResults>No results</NoPostsResults>
+      )}
       <CardsWrapper>
         {filteredPosts.map((post) => (
-          <Card
-            title={post.title}
-            subtitle={post.username}
-            key={post.id}
-            content={
-              <ContentWrapper>
-                {post.comments.map((comment) => (
-                  <p key={comment}>* {comment}</p>
-                ))}
-              </ContentWrapper>
-            }
-          />
+          <NavigationLink to={`${ROUTES.POSTS}/${post.id}`}>
+            <Card
+              title={post.title}
+              subtitle={post.username}
+              key={post.id}
+              content={
+                <ContentWrapper>
+                  {post.comments.map((comment) => (
+                    <p key={comment}>* {comment}</p>
+                  ))}
+                </ContentWrapper>
+              }
+            />
+          </NavigationLink>
         ))}
       </CardsWrapper>
     </>

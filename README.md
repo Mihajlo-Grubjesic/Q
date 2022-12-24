@@ -30,5 +30,6 @@ TODO:
 - write RTL tests
 - white matchInlineSnapshot test for combinePosts function
 - console.log in component (set global context provider)
+- MAYBE: add virtual list library
 - add search functionality
 - add click on Post functionality

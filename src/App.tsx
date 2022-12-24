@@ -36,7 +36,7 @@ function App() {
     },
     {
       path: ROUTES.POST,
-      element: <PostDetails />,
+      element: <PostDetails posts={postsData} />,
     },
   ]);
 

@@ -9,7 +9,7 @@ export default {
 
 const Template: ComponentStory<typeof CardComponent> = () => (
   <div style={{ width: "400px" }}>
-    <CardComponent />;
+    <CardComponent />
   </div>
 );
 

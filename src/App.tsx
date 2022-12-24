@@ -1,10 +1,33 @@
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { lightTheme, darkTheme } from "./theme/themes";
 import useDarkTheme from "./hooks/useDarkTheme";
 
-import { Card } from "./components/Card/Card";
 import { Header } from "./components/Header/Header";
+import { Posts } from "./containers/Posts/Posts";
+import { PostDetails } from "./containers/PostDetails/PostDetails";
+import { ROUTES } from "./constants/routes";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navigate to={ROUTES.POSTS} />,
+  },
+  {
+    path: ROUTES.POSTS,
+    element: <Posts />,
+  },
+  {
+    path: ROUTES.POST,
+    element: <PostDetails />,
+  },
+]);
 
 function App() {
   const [theme, themeToggler] = useDarkTheme();
@@ -15,7 +38,7 @@ function App() {
       <>
         <GlobalStyles />
         <Header onToggleTheme={themeToggler} />
-        <Card />
+        <RouterProvider router={router} />
       </>
     </ThemeProvider>
   );

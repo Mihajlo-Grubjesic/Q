@@ -4,6 +4,9 @@ export const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 `;
+export const ContentWrapper = styled.div`
+  padding: 4px;
+`;
 
 export const CardWrapper = styled.div`
   display: flex;

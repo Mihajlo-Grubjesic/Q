@@ -13,27 +13,32 @@ import { Header } from "./components/Header/Header";
 import { Posts } from "./containers/Posts/Posts";
 import { PostDetails } from "./containers/PostDetails/PostDetails";
 import { ErrorPage } from "./components/ErrorPage/ErrorPage";
+import { Loader } from "./components/Loader/Loader";
 import { ROUTES } from "./constants/routes";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Navigate to={ROUTES.POSTS} />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: ROUTES.POSTS,
-    element: <Posts />,
-  },
-  {
-    path: ROUTES.POST,
-    element: <PostDetails />,
-  },
-]);
+import { usePosts } from "./hooks/usePosts";
 
 function App() {
-  const [theme, themeToggler] = useDarkTheme();
+  const { theme, themeToggler } = useDarkTheme();
+  const { postsData, error, loading } = usePosts();
   const selectedTheme = theme === "light" ? lightTheme : darkTheme;
+  if (loading) return <Loader />;
+  if (error) return <div>{error}</div>;
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Navigate to={ROUTES.POSTS} />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: ROUTES.POSTS,
+      element: <Posts posts={postsData} />,
+    },
+    {
+      path: ROUTES.POST,
+      element: <PostDetails />,
+    },
+  ]);
 
   return (
     <ThemeProvider theme={selectedTheme}>

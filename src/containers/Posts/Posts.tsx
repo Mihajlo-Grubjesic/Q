@@ -1,14 +1,28 @@
 import { Card } from "../../components/Card/Card";
-import { CardsWrapper } from "../../components/Card/styled/Card";
+import {
+  CardsWrapper,
+  ContentWrapper,
+} from "../../components/Card/styled/Card";
+import { PostData } from "../../types";
 
-export const Posts = () => {
+interface Props {
+  posts: PostData[];
+}
+
+export const Posts = ({ posts }: Props): JSX.Element => {
   return (
     <CardsWrapper>
-      {[...Array(40).keys()].map(() => (
+      {posts.map((post) => (
         <Card
-          title="Title"
-          subtitle="Subtitle"
-          content={<div>This is card content</div>}
+          title={post.title}
+          subtitle={post.username}
+          content={
+            <ContentWrapper>
+              {post.comments.map((comment) => (
+                <p>* {comment}</p>
+              ))}
+            </ContentWrapper>
+          }
         />
       ))}
     </CardsWrapper>

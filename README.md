@@ -28,6 +28,7 @@ TODO:
 - fetch data & prepare for component (write hook for this)
 - display data
 - write RTL tests
+- white matchInlineSnapshot test for combinePosts function
 - console.log in component (set global context provider)
 - add search functionality
 - add click on Post functionality

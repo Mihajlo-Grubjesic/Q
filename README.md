@@ -19,8 +19,6 @@
 TODO:
 
 - snapshots tests
-- husky
-- prettier and linter custom config - maybe
 - storybook done
 - write RTL tests
 - white matchInlineSnapshot test for combinePosts function
@@ -29,6 +27,8 @@ TODO:
 
 DONE:
 
+- prettier and linter custom config - maybe
+- husky
 - add Card story and CardDetails story done
 - Search component story done
 - add routes done

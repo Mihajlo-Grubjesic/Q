@@ -1,5 +1,3 @@
-const CardDetails = (): JSX.Element => {
+export const CardDetails = (): JSX.Element => {
   return <div>Card Details</div>;
 };
-
-export default CardDetails;

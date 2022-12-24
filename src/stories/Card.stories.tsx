@@ -7,6 +7,10 @@ export default {
   component: CardComponent,
 } as ComponentMeta<typeof CardComponent>;
 
-const Template: ComponentStory<typeof CardComponent> = () => <CardComponent />;
+const Template: ComponentStory<typeof CardComponent> = () => (
+  <div style={{ width: "400px" }}>
+    <CardComponent />;
+  </div>
+);
 
 export const Card = Template.bind({});

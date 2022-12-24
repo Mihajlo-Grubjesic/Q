@@ -8,7 +8,13 @@
 
 ### `npm install`
 
-### `npm run start`
+### `npm run dev`
+
+## How to start storybook
+
+### `npm run storybook`
+
+### Storybook will preview basic components as a showcase and provide possibility to change theme in the Storybook page header
 
 TODO:
 

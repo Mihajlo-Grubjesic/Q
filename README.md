@@ -40,7 +40,7 @@
 
 ### `npm run storybook`
 
-### ↗️ Storybook deploy link: https://q-mihajlo-grubjesic.vercel.app/?path=/story/example-button--button
+### ↗️ Storybook deploy link: https://q-storybook-mihajlo-grubjesic.vercel.app/?path=/story/example-button--button
 
 ### ℹ️ Storybook will preview basic components as a showcase and provide possibility to change theme in the Storybook page header
 

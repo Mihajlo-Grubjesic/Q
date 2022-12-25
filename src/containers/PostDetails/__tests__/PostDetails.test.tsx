@@ -17,6 +17,10 @@ vi.mock('react-router-dom', async () => {
   return { ...actual, useParams: () => mockUseParams() };
 });
 
+vi.mock('react-i18next', () => ({
+  useTranslation: () => ({ t: (key: string) => key }),
+}));
+
 describe('PostDetails', () => {
   it('renders post details', () => {
     const posts = combinePostsData({

@@ -6,6 +6,8 @@
 
 ### Application supports light/dark theme and translation mechanism
 
+### Applications deploy link: https://q-app-two.vercel.app/posts
+
 ## How to start application:
 
 ### 1. Clone application from github
@@ -21,5 +23,7 @@
 ## How to start storybook:
 
 ### `npm run storybook`
+
+### Storybook deploy link: https://q-mihajlo-grubjesic.vercel.app/?path=/story/example-button--button
 
 ### Storybook will preview basic components as a showcase and provide possibility to change theme in the Storybook page header

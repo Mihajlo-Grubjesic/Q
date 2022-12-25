@@ -1,6 +1,6 @@
+import { vi } from 'vitest';
 import { fireEvent, screen } from '@testing-library/react';
 import { renderWithThemeAndRouter } from '../../../utils/renderWithThemeAndRouter';
-import { vi } from 'vitest';
 
 import { CommentsMock } from '../../../mocks/comments';
 import { PostsMock } from '../../../mocks/posts';

@@ -2,41 +2,24 @@
 
 ### Simple demo application which will fetch posts from api and display them together with corresponding comments.
 
-## How to start application
+### Application is scaffolded with [Vite](https://vitejs.dev/guide/) build tool.
 
-### Clone application from github
+### Application supports light/dark theme and translation mechanism
 
-### `npm install`
+## How to start application:
 
-### `npm run dev`
+### 1. Clone application from github
 
-## Run tests
+### 2. `npm install`
+
+### 3. `npm run dev`
+
+## Run tests:
 
 ### `npm run test`
 
-## How to start storybook
+## How to start storybook:
 
 ### `npm run storybook`
 
 ### Storybook will preview basic components as a showcase and provide possibility to change theme in the Storybook page header
-
-TODO:
-
-- MAYBE: add virtual list library
-
-DONE:
-
-- snapshots tests
-- write RTL tests
-- white matchInlineSnapshot test for combinePosts function
-- console.log in component (set global context provider)
-- prettier and linter custom config - maybe
-- husky
-- add Card story and CardDetails story done
-- Search component story done
-- add routes done
-- storybook done
-- fetch data & prepare for component (write hook for this) done
-- display data done
-- add search functionality done
-- add click on Post functionality done

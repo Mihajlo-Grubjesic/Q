@@ -16,17 +16,17 @@
 
 ## 🌀 Start application:
 
-### 1. Clone application from github
+### Clone application from github
 
-### 2. `npm install`
+### `npm install`
 
-### 3. `npm run dev`
+### `npm run dev`
 
 <br/>
 
 ## 🔨 Build application:
 
-### 1. `npm run build`
+### `npm run build`
 
 <br/>
 

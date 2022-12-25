@@ -4,7 +4,9 @@
 
 ### 🚀 Application is scaffolded with [Vite](https://vitejs.dev/guide/) build tool.
 
-### ☀️ 🌒 Application supports light/dark theme and translation mechanism
+### ☀️ 🌒 Application supports light/dark theme
+
+### 💬 Application supports translation mechanism
 
 <br/>
 

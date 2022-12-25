@@ -1,0 +1,250 @@
+// Vitest Snapshot v1
+
+exports[`Posts > renders posts 1`] = `
+<div>
+  <div
+    class="sc-iBYQkv cMOQto"
+  >
+    <input
+      class="sc-jSUZER dHbPHT"
+      placeholder="searchPostsPlaceholder"
+    />
+  </div>
+  <div
+    class="sc-bcXHqe ilmuKn"
+  >
+    <a
+      class="sc-gKPRtg eaKZcD"
+      href="/posts/1"
+    >
+      <div
+        class="sc-dkrFOg ysqzP"
+      >
+        <div
+          class="sc-hLBbgP kaMPmA"
+        >
+          Post 1
+        </div>
+        <div
+          class="sc-eDvSVe cwgtvh"
+        >
+          Bret
+        </div>
+        <div
+          class="sc-gswNZR huITSX"
+        >
+          <p>
+            ● 
+            laudantium enim quasi est quidem magnam voluptate ipsam eos
+tempora quo necessitatibus
+dolor quam autem quasi
+reiciendis et nam sapiente accusantium
+          </p>
+          <p>
+            ● 
+            est natus enim nihil est dolore omnis voluptatem numquam
+et omnis occaecati quod ullam at
+voluptatem error expedita pariatur
+nihil sint nostrum voluptatem reiciendis et
+          </p>
+          <p>
+            ● 
+            quia molestiae reprehenderit quasi aspernatur
+aut expedita occaecati aliquam eveniet laudantium
+omnis quibusdam delectus saepe quia accusamus maiores nam est
+cum et ducimus et vero voluptates excepturi deleniti ratione
+          </p>
+          <p>
+            ● 
+            non et atque
+occaecati deserunt quas accusantium unde odit nobis qui voluptatem
+quia voluptas consequuntur itaque dolor
+et qui rerum deleniti ut occaecati
+          </p>
+          <p>
+            ● 
+            harum non quasi et ratione
+tempore iure ex voluptates in ratione
+harum architecto fugit inventore cupiditate
+voluptates magni quo et
+          </p>
+        </div>
+      </div>
+    </a>
+    <a
+      class="sc-gKPRtg eaKZcD"
+      href="/posts/2"
+    >
+      <div
+        class="sc-dkrFOg ysqzP"
+      >
+        <div
+          class="sc-hLBbgP kaMPmA"
+        >
+          Post 2
+        </div>
+        <div
+          class="sc-eDvSVe cwgtvh"
+        >
+          Antonette
+        </div>
+        <div
+          class="sc-gswNZR huITSX"
+        >
+          <p>
+            ● 
+            doloribus at sed quis culpa deserunt consectetur qui praesentium
+accusamus fugiat dicta
+voluptatem rerum ut voluptate autem
+voluptatem repellendus aspernatur dolorem in
+          </p>
+          <p>
+            ● 
+            maiores sed dolores similique labore et inventore et
+quasi temporibus esse sunt id et
+eos voluptatem aliquam
+aliquid ratione corporis molestiae mollitia quia et magnam dolor
+          </p>
+          <p>
+            ● 
+            ut voluptatem corrupti velit
+ad voluptatem maiores
+et nisi velit vero accusamus maiores
+voluptates quia aliquid ullam eaque
+          </p>
+          <p>
+            ● 
+            sapiente assumenda molestiae atque
+adipisci laborum distinctio aperiam et ab ut omnis
+et occaecati aspernatur odit sit rem expedita
+quas enim ipsam minus
+          </p>
+          <p>
+            ● 
+            voluptate iusto quis nobis reprehenderit ipsum amet nulla
+quia quas dolores velit et non
+aut quia necessitatibus
+nostrum quaerat nulla et accusamus nisi facilis
+          </p>
+        </div>
+      </div>
+    </a>
+    <a
+      class="sc-gKPRtg eaKZcD"
+      href="/posts/3"
+    >
+      <div
+        class="sc-dkrFOg ysqzP"
+      >
+        <div
+          class="sc-hLBbgP kaMPmA"
+        >
+          Post 3
+        </div>
+        <div
+          class="sc-eDvSVe cwgtvh"
+        >
+          Samantha
+        </div>
+        <div
+          class="sc-gswNZR huITSX"
+        >
+          <p>
+            ● 
+            ut dolorum nostrum id quia aut est
+fuga est inventore vel eligendi explicabo quis consectetur
+aut occaecati repellat id natus quo est
+ut blanditiis quia ut vel ut maiores ea
+          </p>
+          <p>
+            ● 
+            expedita maiores dignissimos facilis
+ipsum est rem est fugit velit sequi
+eum odio dolores dolor totam
+occaecati ratione eius rem velit
+          </p>
+          <p>
+            ● 
+            fuga eos qui dolor rerum
+inventore corporis exercitationem
+corporis cupiditate et deserunt recusandae est sed quis culpa
+eum maiores corporis et
+          </p>
+          <p>
+            ● 
+            vel quae voluptas qui exercitationem
+voluptatibus unde sed
+minima et qui ipsam aspernatur
+expedita magnam laudantium et et quaerat ut qui dolorum
+          </p>
+          <p>
+            ● 
+            nihil ut voluptates blanditiis autem odio dicta rerum
+quisquam saepe et est
+sunt quasi nemo laudantium deserunt
+molestias tempora quo quia
+          </p>
+        </div>
+      </div>
+    </a>
+    <a
+      class="sc-gKPRtg eaKZcD"
+      href="/posts/4"
+    >
+      <div
+        class="sc-dkrFOg ysqzP"
+      >
+        <div
+          class="sc-hLBbgP kaMPmA"
+        >
+          Post 4
+        </div>
+        <div
+          class="sc-eDvSVe cwgtvh"
+        >
+          Karianne
+        </div>
+        <div
+          class="sc-gswNZR huITSX"
+        >
+          <p>
+            ● 
+            iste ut laborum aliquid velit facere itaque
+quo ut soluta dicta voluptate
+error tempore aut et
+sequi reiciendis dignissimos expedita consequuntur libero sed fugiat facilis
+          </p>
+          <p>
+            ● 
+            consequatur necessitatibus totam sed sit dolorum
+recusandae quae odio excepturi voluptatum harum voluptas
+quisquam sit ad eveniet delectus
+doloribus odio qui non labore
+          </p>
+          <p>
+            ● 
+            veritatis voluptates necessitatibus maiores corrupti
+neque et exercitationem amet sit et
+ullam velit sit magnam laborum
+magni ut molestias
+          </p>
+          <p>
+            ● 
+            doloribus est illo sed minima aperiam
+ut dignissimos accusantium tempore atque et aut molestiae
+magni ut accusamus voluptatem quos ut voluptates
+quisquam porro sed architecto ut
+          </p>
+          <p>
+            ● 
+            qui harum consequatur fugiat
+et eligendi perferendis at molestiae commodi ducimus
+doloremque asperiores numquam qui
+ut sit dignissimos reprehenderit tempore
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

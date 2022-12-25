@@ -5,5 +5,9 @@ interface Props {
 }
 
 export const ThemeToggler = ({ onToggleTheme }: Props): JSX.Element => {
-  return <Button onClick={onToggleTheme}>☀️ 🌙</Button>;
+  return (
+    <Button role="theme-toggler" onClick={onToggleTheme}>
+      ☀️ 🌙
+    </Button>
+  );
 };

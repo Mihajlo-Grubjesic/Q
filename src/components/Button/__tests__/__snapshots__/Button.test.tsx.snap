@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`Button > renders button 1`] = `
+<div>
+  <button
+    class="sc-bcXHqe fgvtsA"
+  />
+</div>
+`;

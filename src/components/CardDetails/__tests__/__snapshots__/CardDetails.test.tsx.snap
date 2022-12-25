@@ -1,0 +1,20 @@
+// Vitest Snapshot v1
+
+exports[`CardDetails > renders card details 1`] = `
+<div>
+  <div
+    class="sc-jSUZER pdkVY"
+  >
+    <div
+      class="sc-hLBbgP kaMPmA"
+    >
+      title
+    </div>
+    <div
+      class="sc-eDvSVe cwgtvh"
+    >
+      subtitle
+    </div>
+  </div>
+</div>
+`;

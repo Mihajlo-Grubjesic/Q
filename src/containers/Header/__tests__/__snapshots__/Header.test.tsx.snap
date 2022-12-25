@@ -1,0 +1,21 @@
+// Vitest Snapshot v1
+
+exports[`Header > renders header 1`] = `
+<div>
+  <div
+    class="sc-gswNZR kBhlT"
+  >
+    <button
+      class="sc-bcXHqe fetPcC"
+    >
+      🇬🇧 🇪🇸
+    </button>
+    <button
+      class="sc-bcXHqe fetPcC"
+      role="theme-toggler"
+    >
+      ☀️ 🌙
+    </button>
+  </div>
+</div>
+`;

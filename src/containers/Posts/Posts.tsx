@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Card } from '../../components/Card/Card';
 import {
   CardsWrapper,
@@ -19,6 +20,7 @@ interface Props {
 
 const Posts = ({ posts, message }: Props): JSX.Element => {
   console.log(`${message} Posts List`);
+  const { t } = useTranslation();
 
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [searchTerm, setSearchTerm] = useState('');
@@ -45,7 +47,7 @@ const Posts = ({ posts, message }: Props): JSX.Element => {
       <PostsSearch>
         <Input
           onChange={(e) => handlePostSearch(e.target.value)}
-          placeholder="Search posts by username"
+          placeholder={t('searchPostsPlaceholder') as string}
         />
       </PostsSearch>
       {filteredPosts.length === 0 && (

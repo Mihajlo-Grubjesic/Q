@@ -9,13 +9,13 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/themes';
 import useDarkTheme from './hooks/useDarkTheme';
 
-import Header from './components/Header/Header';
+import Header from './containers/Header/Header';
 import Posts from './containers/Posts/Posts';
 import PostDetails from './containers/PostDetails/PostDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import { Loader } from './components/Loader/Loader';
 import { ROUTES } from './constants/routes';
-import { usePosts } from './hooks/usePosts';
+import { usePosts } from './containers/Posts/hooks/usePosts';
 
 function App() {
   const { theme, themeToggler } = useDarkTheme();

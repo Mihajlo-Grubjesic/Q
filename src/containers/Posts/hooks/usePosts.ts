@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { API_URL } from '../constants/api';
-import { combinePostsData } from '../utils';
+import { API_URL } from '../../../constants/api';
+import { combinePostsData } from '../../../utils';
 
 export const usePosts = () => {
   const [posts, setPosts] = useState(null);

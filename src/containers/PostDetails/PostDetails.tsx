@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { Button } from '../../components/Button/Button';
 import { ContentWrapper } from '../../components/Card/styled/Card';
@@ -15,6 +16,7 @@ interface Props {
 const PostDetails = ({ posts, message }: Props): JSX.Element => {
   console.log(`${message} Post Details`);
 
+  const { t } = useTranslation();
   const { postId } = useParams();
   const post = posts.find((post) => post.id.toString() === postId);
   const { title = '', username = '', comments = [] } = post ?? {};
@@ -32,7 +34,7 @@ const PostDetails = ({ posts, message }: Props): JSX.Element => {
         }
       />
       <NavigationLink to={ROUTES.POSTS}>
-        <Button>← Go Back</Button>
+        <Button>{`← ${t('goBack')}`}</Button>
       </NavigationLink>
     </>
   );

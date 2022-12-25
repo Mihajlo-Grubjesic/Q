@@ -1,6 +1,7 @@
-import { ThemeToggler } from '../ThemeToggler/ThemeToggler';
+import { ThemeToggler } from './components/ThemeToggler/ThemeToggler';
+import { LanguageToggler } from './components/LanguageToggler/LanguageToggler';
 import { HeaderWrapper } from './styled/Header';
-import { withMessage } from '../HOC/withMessage';
+import { withMessage } from '../../components/HOC/withMessage';
 
 interface Props {
   onToggleTheme: () => void;
@@ -12,6 +13,7 @@ const Header = ({ onToggleTheme, message = '' }: Props): JSX.Element => {
 
   return (
     <HeaderWrapper>
+      <LanguageToggler />
       <ThemeToggler onToggleTheme={onToggleTheme} />
     </HeaderWrapper>
   );

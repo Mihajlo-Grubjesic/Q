@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { ThemeToggler } from '../components/ThemeToggler/ThemeToggler';
+import { ThemeToggler } from '../containers/Header/components/ThemeToggler/ThemeToggler';
 
 export default {
   title: 'Example/ThemeTogglerButton',

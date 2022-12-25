@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Posts > renders posts 1`] = `
+exports[`Posts > renders posts and test click on post redirection 1`] = `
 <div>
   <div
     class="sc-iBYQkv cMOQto"
@@ -8,6 +8,7 @@ exports[`Posts > renders posts 1`] = `
     <input
       class="sc-jSUZER dHbPHT"
       placeholder="searchPostsPlaceholder"
+      value=""
     />
   </div>
   <div

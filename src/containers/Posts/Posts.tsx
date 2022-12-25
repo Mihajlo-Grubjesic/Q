@@ -46,6 +46,7 @@ const Posts = ({ posts, message }: Props): JSX.Element => {
     <>
       <PostsSearch>
         <Input
+          value={searchTerm}
           onChange={(e) => handlePostSearch(e.target.value)}
           placeholder={t('searchPostsPlaceholder') || ''}
         />

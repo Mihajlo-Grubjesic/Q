@@ -10,6 +10,10 @@
 
 ### `npm run dev`
 
+## Run tests
+
+### `npm run test`
+
 ## How to start storybook
 
 ### `npm run storybook`
@@ -18,13 +22,13 @@
 
 TODO:
 
-- snapshots tests
-- write RTL tests
-- white matchInlineSnapshot test for combinePosts function
 - MAYBE: add virtual list library
 
 DONE:
 
+- snapshots tests
+- write RTL tests
+- white matchInlineSnapshot test for combinePosts function
 - console.log in component (set global context provider)
 - prettier and linter custom config - maybe
 - husky
